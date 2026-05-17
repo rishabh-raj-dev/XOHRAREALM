@@ -404,8 +404,9 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          LATEST RELEASES SECTION
+          LATEST RELEASES SECTION (Commented out for now)
           ═══════════════════════════════════════════ */}
+      {/* 
       <section className="relative py-24 md:py-32 px-6">
         <div className="w-full">
           <motion.div
@@ -428,7 +429,6 @@ export default function Home() {
 
           <NeonDivider className="mb-12 max-w-sm" />
 
-          {/* Track cards */}
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
             variants={staggerContainer}
@@ -445,14 +445,12 @@ export default function Home() {
                     play(track);
                   }}
                 >
-                  {/* Artwork */}
                   <div className="aspect-square mb-4 overflow-hidden relative bg-bg-elevated border border-dashed border-border-rough">
                     <img
                       src={track.artwork_url}
                       alt={track.title}
                       className="w-full h-full object-cover saturate-[0.7] group-hover:saturate-100 transition-all duration-500"
                     />
-                    {/* Play overlay */}
                     <div className="absolute inset-0 bg-bg-primary/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                       <div className="w-10 h-10 border border-dashed border-accent-amber/50 flex items-center justify-center">
                         <span className="text-accent-amber text-sm">▶</span>
@@ -476,10 +474,12 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+      */}
 
       {/* ═══════════════════════════════════════════
-          CTA SECTION
+          CTA SECTION (Commented out for now)
           ═══════════════════════════════════════════ */}
+      {/* 
       <section className="relative py-24 md:py-32 px-6">
         <motion.div
           className="max-w-2xl mx-auto"
@@ -496,7 +496,6 @@ export default function Home() {
             exclusive content, and events.
           </p>
 
-          {/* Email signup */}
           <div className="flex flex-col sm:flex-row items-stretch gap-3 max-w-md">
             <input
               type="email"
@@ -509,6 +508,7 @@ export default function Home() {
           </div>
         </motion.div>
       </section>
+      */}
     </div>
   );
 }

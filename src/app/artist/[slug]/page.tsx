@@ -75,10 +75,10 @@ export default function ArtistProfilePage() {
         />
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 pt-24 md:pt-32">
+      <div className="relative z-10 max-w-5xl mx-auto px-8 md:px-16 lg:px-24 pt-32 md:pt-48">
         {/* Artist Header */}
         <motion.div
-          className="flex flex-col md:flex-row items-start gap-10 md:gap-14 mb-16"
+          className="flex flex-col md:flex-row items-start gap-12 md:gap-20 mb-20"
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
