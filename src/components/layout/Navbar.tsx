@@ -124,23 +124,11 @@ export default function Navbar() {
                   whileHover={{ borderColor: 'rgba(196,146,42,0.7)' }}
                   transition={{ duration: 0.2 }}
                 />
-                {/* Animated corner scan line */}
-                <motion.div
-                  className="absolute top-0 left-0 w-full h-[1px] bg-accent-amber/50"
-                  animate={{ y: [0, 38, 0] }}
-                  transition={{ duration: 2.5, repeat: Infinity, ease: 'linear' }}
-                />
-                {/* XR Image Logo — glitches periodically */}
-                <motion.img
+                {/* XR Image Logo */}
+                <img
                   src="/artists/xohrarealmslogo.PNG"
-                  alt="XR"
+                  alt="XR Logo"
                   className="absolute inset-0 w-full h-full object-contain p-1"
-                  animate={
-                    logoGlitch
-                      ? { x: [-2, 2, -1, 0], opacity: [1, 0.6, 1] }
-                      : { x: 0, opacity: 1 }
-                  }
-                  transition={{ duration: 0.25 }}
                 />
               </motion.div>
 
