@@ -130,18 +130,18 @@ export default function Navbar() {
                   animate={{ y: [0, 38, 0] }}
                   transition={{ duration: 2.5, repeat: Infinity, ease: 'linear' }}
                 />
-                {/* XR text — glitches periodically */}
-                <motion.span
-                  className="absolute inset-0 flex items-center justify-center font-micro text-[8px] text-accent-amber"
+                {/* XR Image Logo — glitches periodically */}
+                <motion.img
+                  src="/artists/xohrarealmslogo.PNG"
+                  alt="XR"
+                  className="absolute inset-0 w-full h-full object-contain p-1"
                   animate={
                     logoGlitch
                       ? { x: [-2, 2, -1, 0], opacity: [1, 0.6, 1] }
                       : { x: 0, opacity: 1 }
                   }
                   transition={{ duration: 0.25 }}
-                >
-                  XR
-                </motion.span>
+                />
               </motion.div>
 
               {/* Logo wordmark */}
