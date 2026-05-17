@@ -44,7 +44,7 @@ export default function ArtistProfilePage() {
   };
 
   return (
-    <div className="min-h-screen pb-32 relative bg-bg-primary overflow-hidden">
+    <div className="min-h-screen w-full pb-32 relative bg-bg-primary overflow-hidden flex flex-col items-center">
       {/* Back Button */}
       <div className="absolute top-8 left-6 md:left-12 z-50">
         <button
@@ -75,10 +75,10 @@ export default function ArtistProfilePage() {
         />
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-12 pt-32 md:pt-40">
+      <div className="relative z-10 w-full max-w-4xl px-6 md:px-12 pt-32 md:pt-40 flex flex-col items-center">
         {/* Artist Header */}
         <motion.div
-          className="flex flex-col items-center text-center gap-10 mb-20"
+          className="flex flex-col items-center text-center gap-10 mb-20 w-full"
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
@@ -159,7 +159,7 @@ export default function ArtistProfilePage() {
 
         {/* Streaming & Social Links */}
         <motion.div
-          className="mb-16 flex flex-col md:flex-row justify-center gap-12 md:gap-24"
+          className="mb-16 flex flex-col md:flex-row justify-center gap-12 md:gap-24 w-full"
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
