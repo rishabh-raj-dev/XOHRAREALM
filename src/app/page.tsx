@@ -307,7 +307,8 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.8 }}
           >
-            {/* Play button — primary action */}
+            {/* Play button — primary action (Commented out for now) */}
+            {/*
             <motion.button
               className="flex items-center gap-3 font-body text-[10px] tracking-[0.25em] uppercase text-accent-amber cursor-pointer group"
               onClick={handlePlayLatest}
@@ -321,8 +322,8 @@ export default function Home() {
               <span className="group-hover:text-accent-cream transition-colors">listen now</span>
             </motion.button>
 
-            {/* Divider */}
             <span className="text-border-rough text-[8px]">│</span>
+            */}
 
             {/* Explore button — secondary */}
             <motion.button
