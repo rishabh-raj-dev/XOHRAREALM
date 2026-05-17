@@ -289,7 +289,7 @@ export default function Home() {
 
           {/* Subtitle */}
           <motion.p
-            className="relative text-text-secondary text-[11px] md:text-[13px] max-w-sm mx-auto text-center mb-10 leading-relaxed font-body tracking-[0.08em] animate-analog-drift"
+            className="relative text-text-secondary text-[15px] md:text-[20px] max-w-md mx-auto text-center mb-10 leading-relaxed font-body tracking-[0.08em] animate-analog-drift"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.5 }}
@@ -297,8 +297,7 @@ export default function Home() {
               textShadow: '0 0 20px rgba(15,13,11,0.8), 0 0 40px rgba(15,13,11,0.5)',
             }}
           >
-            raw sound. analog soul.<br />
-            where noise becomes meaning.
+            raw honest loud<br />
           </motion.p>
 
           {/* ── CTA — retro media-player controls ── */}

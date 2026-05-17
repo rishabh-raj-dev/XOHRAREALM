@@ -92,13 +92,13 @@ export default function ArtistProfilePage() {
             />
             
             <div
-              className="w-56 h-72 md:w-64 md:h-80 overflow-hidden relative border border-border-rough/30 bg-bg-secondary/60 backdrop-blur-sm"
+              className="w-full md:w-64 md:h-80 overflow-hidden relative border border-border-rough/30 bg-bg-secondary/60 backdrop-blur-sm"
               style={{ borderRadius: '4px' }}
             >
               <img
                 src={artist.avatar_url}
                 alt={artist.name}
-                className="w-full h-full object-cover mix-blend-luminosity"
+                className="w-full h-auto md:h-full md:object-cover mix-blend-luminosity"
                 style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.9)' }}
               />
               <div className="absolute inset-0 shadow-[inset_0_4px_24px_rgba(0,0,0,0.9)] pointer-events-none" />
