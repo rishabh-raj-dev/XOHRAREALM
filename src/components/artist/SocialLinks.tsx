@@ -46,7 +46,7 @@ export default function SocialLinks(props: SocialLinksProps) {
 
   return (
     <motion.div
-      className="flex flex-wrap gap-3"
+      className="flex flex-wrap gap-3 justify-center"
       variants={staggerContainer}
       initial="hidden"
       animate="visible"

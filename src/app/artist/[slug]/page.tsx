@@ -75,10 +75,10 @@ export default function ArtistProfilePage() {
         />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-8 md:px-16 lg:px-24 pt-32 md:pt-48">
+      <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-12 pt-32 md:pt-40">
         {/* Artist Header */}
         <motion.div
-          className="flex flex-col md:flex-row items-start gap-12 md:gap-20 mb-20"
+          className="flex flex-col items-center text-center gap-10 mb-20"
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
@@ -87,12 +87,12 @@ export default function ArtistProfilePage() {
           <motion.div variants={fadeInUp} className="relative shrink-0">
             {/* Soft backdrop glow behind image */}
             <div 
-              className="absolute -inset-4 rounded-full blur-2xl opacity-20 pointer-events-none"
+              className="absolute -inset-6 rounded-full blur-3xl opacity-20 pointer-events-none"
               style={{ backgroundColor: accentColor }}
             />
             
             <div
-              className="w-48 h-64 md:w-56 md:h-72 overflow-hidden relative border border-border-rough/30 bg-bg-secondary/60 backdrop-blur-sm"
+              className="w-56 h-72 md:w-64 md:h-80 overflow-hidden relative border border-border-rough/30 bg-bg-secondary/60 backdrop-blur-sm"
               style={{ borderRadius: '4px' }}
             >
               <img
@@ -106,47 +106,33 @@ export default function ArtistProfilePage() {
             </div>
             
             {/* Micro timestamp tag */}
-            <div className="absolute -bottom-3 right-4 px-3 py-1.5 bg-bg-secondary/80 backdrop-blur-md border border-border-rough/40 rounded-sm flex items-center gap-2 shadow-xl">
-              <span className="w-1 h-1 rounded-full bg-accent-rust animate-pulse" />
-              <span className="text-[6px] font-micro tracking-[0.2em] text-text-muted uppercase">
+            <div className="absolute -bottom-4 right-1/2 translate-x-1/2 px-4 py-2 bg-bg-secondary/90 backdrop-blur-md border border-border-rough/40 rounded-sm flex items-center gap-2 shadow-xl">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent-rust animate-pulse" />
+              <span className="text-[8px] font-micro tracking-[0.2em] text-text-muted uppercase">
                 REC // {String(mockArtists.indexOf(artist) + 1).padStart(2, '0')}
               </span>
             </div>
           </motion.div>
 
           {/* Info */}
-          <motion.div variants={fadeInUp} className="flex-1 pt-4">
+          <motion.div variants={fadeInUp} className="flex flex-col items-center pt-4 w-full max-w-2xl">
             <span
               className="inline-block text-[10px] tracking-[0.25em] uppercase font-body mb-4 text-text-muted/80"
             >
               {artist.genre.toLowerCase()}
             </span>
             <h1
-              className="font-display text-4xl md:text-5xl font-bold tracking-wider mb-6 leading-none"
+              className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-wider mb-6 leading-none"
               style={{ 
                 color: accentColor,
-                textShadow: `0 0 30px ${accentColor}40`
+                textShadow: `0 0 40px ${accentColor}40`
               }}
             >
               {artist.name}
             </h1>
-            <p className="text-text-secondary text-sm max-w-lg leading-relaxed font-body mb-8">
+            <p className="text-text-secondary text-sm leading-relaxed font-body mb-8">
               {artist.bio}
             </p>
-
-            {/* artistTracks.length > 0 && (
-              <motion.div variants={fadeInUp}>
-                <button 
-                  onClick={handlePlayAll}
-                  className="group flex items-center gap-3 px-6 py-3 border border-border-rough/40 bg-bg-secondary/40 backdrop-blur-sm hover:bg-bg-elevated transition-all duration-300"
-                >
-                  <span className="text-[10px]" style={{ color: accentColor }}>▶</span>
-                  <span className="font-body text-[10px] tracking-[0.2em] uppercase text-text-primary group-hover:text-accent-amber transition-colors">
-                    play all ({artistTracks.length})
-                  </span>
-                </button>
-              </motion.div>
-            ) */}
           </motion.div>
         </motion.div>
 
@@ -173,14 +159,14 @@ export default function ArtistProfilePage() {
 
         {/* Streaming & Social Links */}
         <motion.div
-          className="mb-16 grid grid-cols-1 md:grid-cols-2 gap-12"
+          className="mb-16 flex flex-col md:flex-row justify-center gap-12 md:gap-24"
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <div>
-            <h2 className="font-display text-sm tracking-[0.15em] mb-6 flex items-center gap-3 opacity-90">
+          <div className="flex flex-col items-center text-center">
+            <h2 className="font-display text-sm tracking-[0.15em] mb-6 flex items-center justify-center gap-3 opacity-90">
               <span style={{ color: accentColor }} className="text-[10px]">❖</span>
               streaming
             </h2>
@@ -192,8 +178,8 @@ export default function ArtistProfilePage() {
             />
           </div>
 
-          <div>
-            <h2 className="font-display text-sm tracking-[0.15em] mb-6 flex items-center gap-3 opacity-90">
+          <div className="flex flex-col items-center text-center">
+            <h2 className="font-display text-sm tracking-[0.15em] mb-6 flex items-center justify-center gap-3 opacity-90">
               <span style={{ color: accentColor }} className="text-[10px]">❖</span>
               network
             </h2>
@@ -208,7 +194,7 @@ export default function ArtistProfilePage() {
 
         {/* Stats Cards */}
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 gap-4"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
