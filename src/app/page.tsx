@@ -395,7 +395,7 @@ export default function Home() {
           <NeonDivider className="mb-14 max-w-xs mx-auto" />
 
           {/* Artist grid */}
-          <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" style={{ padding: '0 2rem' }}>
+          <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" style={{ padding: ' 10px ' }}>
             {mockArtists.map((artist, i) => (
               <ArtistCard key={artist.id} artist={artist} index={i} />
             ))}

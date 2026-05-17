@@ -67,11 +67,11 @@ export default function ArtistCard({ artist, index }: ArtistCardProps) {
           </div>
 
           {/* Cinematic Title */}
-          <h3 className="font-display text-[16px] md:text-[18px] font-bold tracking-[0.12em] uppercase text-text-primary/90 group-hover:text-accent-amber group-hover:text-glow-amber transition-all duration-500 truncate leading-none">
+          <h3 className="font-display text-[16px] md:text-[18px] font-bold tracking-[0.12em] uppercase text-text-primary/90 group-hover:text-accent-amber group-hover:text-glow-amber transition-all duration-500 leading-tight">
             {artist.name}
           </h3>
           
-          <p className="text-text-muted/70 text-[10px] tracking-[0.25em] font-body mt-2 uppercase truncate group-hover:text-text-secondary transition-colors duration-500">
+          <p className="text-text-muted/70 text-[10px] tracking-[0.25em] font-body mt-2 uppercase group-hover:text-text-secondary transition-colors duration-500">
             {artist.genre}
           </p>
 
