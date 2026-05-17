@@ -136,7 +136,7 @@ export default function ArtistProfilePage() {
           </motion.div>
         </motion.div>
 
-        <div className="h-px w-full max-w-xs mx-auto mb-16 bg-gradient-to-r from-transparent via-border-rough to-transparent" />
+        <div className="h-px w-full max-w-xs mx-auto my-20 md:my-28 bg-gradient-to-r from-transparent via-border-rough to-transparent" />
 
         {/* Tracks Section (Commented out for now) */}
         {/* artistTracks.length > 0 && (
@@ -159,7 +159,7 @@ export default function ArtistProfilePage() {
 
         {/* Streaming & Social Links */}
         <motion.div
-          className="mb-16 flex flex-col md:flex-row justify-center gap-12 md:gap-24 w-full"
+          className="mb-20 md:mb-28 flex flex-col md:flex-row justify-center gap-12 md:gap-24 w-full"
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
